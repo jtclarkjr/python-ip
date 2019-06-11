@@ -1,4 +1,4 @@
-# IP Check app
+# python-ip
 
 Script that shows your public IP address.
 
