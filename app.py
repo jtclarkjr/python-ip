@@ -1,6 +1,7 @@
 # ipchecker
 #!/usr/bin/env python
 
+#install import libraries with pip3
 import urllib2
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
@@ -13,7 +14,7 @@ toaddr = "xxxxxx.com"
 msg = MIMEMultipart()
 msg['From'] = fromaddr
 msg['To'] = toaddr
-msg['Subject'] = "Pi IP Update"
+msg['Subject'] = "IP Update"
 ip = ""
 while ip == "":
 	try:
@@ -44,8 +45,8 @@ while True:
 		log = open('/usr/local/bin/pivpn/PiVPN.log', 'w+')
 		log.write(ip)
 		log.close()
-		print("Changed the IP address in PiVPN.log!")
+		print("IP address changed in PiVPN.log")
 	else:
-		print("Did not update PiVPN.log!")	
+		print("No changes in PiVPN.log")	
 	curTime = time.clock()
 	time.sleep(curTime + 3600)
