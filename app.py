@@ -16,8 +16,7 @@ msg['From'] = fromaddr
 msg['To'] = toaddr
 msg['Subject'] = "IP Update"
 ip = ""
-while ip == "":
-	
+while ip == "":	
 	# gets current IP from URL
 	try:
 		ip = urllib2.urlopen('http://ip.42.pl/raw').read()
