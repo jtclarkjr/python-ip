@@ -1,5 +1,7 @@
-# IP Checker
+# IP Check app
 
-Script that shows your public ip
+Script that shows your public IP address.
 
-Check your IP adress and if the IP has changed it will send a message to a provided email.
+Checks your IP address.
+
+If the IP changes after a certain duration a message will be sent to the provided email.
